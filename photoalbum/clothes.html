@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<heml>
+    <head>
+        <title>ポートフォリオ</title>
+        <meta charset="utf-8">
+        <meta name="description" content="このサイトは写真を投稿するサイトを目指しています。">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.css" rel="stylesheet">
+        <script src="https://code.jquery.com/jquery-1.12.4.min.js" type="text/javascript"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js" type="text/javascript"></script>
+    </head>
+    <body>
+        <!-- ヘッダー -->
+        <header>
+            <!-- ロゴ -->
+            <a href="photogram.html" id="logo"><img src="images/logo.svg" alt="トップページに戻る"></a>
+             <!-- PC用ナビゲーション -->
+            <nav id="nav-pc">
+              <a href="photogram.html#about">About</a>
+              <a href="clothes.html">Clothes</a>
+              <a href="scenery.html">Scenery</a>
+              <a href="photogram.html#contact">お問い合わせ</a>
+            </nav>
+        </header>
+        <main>
+            <article>
+                <!-- メインビジュアル -->
+                <section id="main-visual">
+                    <div id="main-massage">
+                        <h1>Clothes</h1>
+                    </div>
+                    <img src="images/pexels-kai-pilger-996329 .jpg" alt="写真集">
+                </section>
+
+                <!-- clothes -->
+                  <section id="clothes">
+                    <h2 class="index-title">My Clothes</h2>
+                    <div class="clothes-scroll">      
+                      
+                      <div class="clothes-list">
+                        <figure class="clothes-image">
+                          <a href="images/スクロールグループ 9.jpg" data-lightbox="abc" data-title="俺が撮った写真"><img src="images/スクロールグループ 9.jpg" alt="俺の服"></a>                          
+                        </figure>
+                        <p class="clothes-p">
+                          ベスト：EMMA CLOTHES　4950円<br>Tシャツ：ユニクロ　1000〜2000円<br>パンツ：epnok　6600円<br>靴：Dedes　5500円<br>
+                          <a href="https://zozo.jp/">ZOZOTOWN</a>
+                          <a href="https://www.uniqlo.com/jp/ja/">UNIQLO</a>
+                        </p>
+                      </div>
+
+                      <hr>
+
+                      <div class="clothes-list">
+                        <figure class="clothes-image">
+                          <a href="images/F0E38178-5F2E-4911-8D7D-098B3945C2FD_1_105_c.jpg" data-lightbox="abc" data-title="俺が撮った写真"><img src="images/F0E38178-5F2E-4911-8D7D-098B3945C2FD_1_105_c.jpg" alt="俺の服"></a>                          
+                        </figure>
+                        <p class="clothes-p">
+                          シャツ：WEGO　3299円<br>タンクトップ：WEGO　1000円<br>パンツ：Adoon plain　3995円<br>靴：LOVEHUNTER　5133円<br>
+                          <a href="https://zozo.jp/">ZOZOTOWN</a>
+                          <a href="https://wego.jp/">WEGO</a>
+                        </p>   
+                      </div>
+
+                      <hr>
+
+                      <div class="clothes-list">
+                        <figure class="clothes-image">
+                          <a href="images/97A1E6C6-A21E-4D8D-9289-3E76C49FD22D_1_105_c.jpg" data-lightbox="abc" data-title="俺が撮った写真"><img src="images/97A1E6C6-A21E-4D8D-9289-3E76C49FD22D_1_105_c.jpg" alt="俺の服"></a>                          
+                        </figure>
+                        <p class="clothes-p">
+                          アウター：下北沢の古着　3000円<br>トップス：kutir　3000円<br>パンツ：classicalelf　6600円<br>靴：VANS　5000円<br>
+                          <a href="https://zozo.jp/">ZOZOTOWN</a>
+                        </p>   
+                      </div>
+
+                    </div>  
+                  </section>
+
+
+                <!-- お問い合わせフォーム -->
+                <section id="contact">
+                  <h2 class="index-title">お問い合わせ</h2>
+                  <!-- STATIC FORMSのフォームタグ -->
+                  <form action="https://api.staticforms.xyz/submit" method="post" id="contact-zenbu">
+                     <input type="text" name="honeypot" style="display:none">
+                     <!-- STATIC FORMSのアクセスキー -->
+                     <input type="hidden" name="accessKey" value="e731fd41-4d25-4806-ad14-c9215a84ed71">
+                     <!--メールのタイトル-->
+                     <input type="hidden" name="subject" value="お問い合わせフォーム" />
+                     <!--送信先のメールアドレスをvalueに設定する-->
+                     <input type="hidden" name="replyTo" value="masashisoccer1006@yahoo.co.jp">
+                     <!--redirectToのURLは公開後のURLへリンクする-->
+                     <input type="hidden" name="redirectTo" value="">
+                    <div>
+                      <div class="contact-heading">
+                        <label class="contact-label">お名前<span class="contact-span">必須</span></label>
+                      </div>
+                      <div class="contact-form">
+                        <input type="text" name="name" placeholder="入力してください" class="contact-textbox">
+                      </div>
+                    </div>
+                    <div>
+                      <div class="contact-heading">
+                        <label class="contact-label">フリガナ<span class="contact-span">必須</span></label>
+                      </div>
+                      <div>
+                        <input type="text" name="hurigana" placeholder="入力してください" class="contact-textbox">
+                      </div>
+                    </div>
+                    <div>
+                      <div class="contact-heading">
+                        <label class="contact-label">メールアドレス<span class="contact-span">必須</span></label>
+                      </div>
+                      <div>
+                        <input type="text" name="email" placeholder="入力してください" class="contact-textbox">
+                      </div>
+                    </div>
+                    <div>
+                      <div class="contact-heading">
+                        <label class="contact-label">電話番号</label>
+                      </div>
+                      <div>
+                        <input type="text" name="tel" placeholder="入力してください" class="contact-textbox">
+                      </div>
+                    </div>
+                    <div>
+                      <div class="contact-heading">
+                        <label class="contact-label">お問い合わせ内容<span class="contact-span">必須</span></label>
+                      </div>
+                      <div>
+                        <textarea class="contact-textarea" placeholder="入力してください" name="message"></textarea>
+                      </div>
+                    </div>
+                    <div>
+                      <div class="contact-heading">
+                        <label class="contact-label">ご希望の連絡先<span class="contact-span">必須</span></label>
+                      </div>
+                      <div>
+                        <input class="radiobutton" type="radio" value="tel" name="contact" checked><label>お電話</label>
+                        <input class="radiobutton" type="radio" value="mail" name="contact"><label>メール</label>
+                        <input class="radiobutton" type="radio" value="both" name="contact"><label>どちらでも</label>
+                      </div>
+                    </div>
+                    <input type="image" value="Submit" src="images/buttonsimple1_redtoiawase.gif" alt="送信する">
+                  </form>
+                </section>
+            </article>
+            <!-- フッター -->
+            <footer>
+              <div id="footer-logo">
+                <a href="photogram.html"><img src="images/logo.svg" alt="写真集"></a>
+              </div>
+              <div id="footer-link">
+                <a href="photogram.html#about">About</a>
+                <a href="clothes.html">Clothes</a>
+                <a href="scenery.html">Scenery</a>
+                <a href="photogram.html#contact">お問い合わせ</a>
+              </div>
+              <div id="sns-footer">
+                <a href="https://www.instagram.com/maashi.n_n/"><img src="images/instagram.png" alt="instagramのリンク"></a>
+                <a href="https://twitter.com/kUl4jtYVal3BoS1"><img src="images/twitter.png" alt="Twitterのリンク"></a>
+                <span id="copyright">&copy;2022 FM , Inc. All Rights Reserved. </span>
+              </div>
+            </footer>
+        </main>
+    </body>
+</heml>
